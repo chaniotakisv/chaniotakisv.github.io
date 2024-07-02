@@ -3,89 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaggelis Chaniotakis - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aadd 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: right;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        .main-content {
-            padding: 20px;
-            background: #fff;
-            margin-top: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .profile-photo {
-            max-width: 150px;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto 20px;
-        }
-        .contact-info {
-            margin-top: 20px;
-        }
-        .contact-info a {
-            text-decoration: none;
-            color: #333;
-            display: flex;
-            align-items: center;
-        }
-        .contact-info img {
-            width: 20px;
-            margin-right: 10px;
-        }
-    </style>
+    <title>Personal Website</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!-- Navbar -->
+    <nav>
         <div class="container">
-            <h1>Vaggelis Chaniotakis</h1>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/vaggelis-chaniotakis-b0b894120/" target="_blank">LinkedIn</a></li>
-                <li><a href="mailto:chaniotakisv@gmail.com">Email</a></li>
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </header>
-    <div class="container">
-        <div class="main-content">
-            <img src="https://media.licdn.com/dms/image/D4D35AQGP-tUXYWJIiA/profile-framedphoto-shrink_200_200/0/1719438409684?e=1720188000&v=beta&t=xUEQXpJhRp6QXC4IjbQMRkJQUm0N8oXg4j7Ss8TJbAA" alt="Profile Photo" class="profile-photo">
-            <h2>About Me</h2>
-            <p>Hello! I am Vaggelis Chaniotakis. Welcome to my portfolio page. Feel free to explore my work and get in touch!</p>
-        </div>
-        <div class="contact-info">
-            <h2>Contact Information</h2>
-            <p><a href="mailto:chaniotakisv@gmail.com"><img src="https://img.icons8.com/ios-filled/50/000000/email.png" alt="Email Icon"> chaniotakisv@gmail.com</a></p>
-            <p><a href="https://www.linkedin.com/in/vaggelis-chaniotakis-b0b894120/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn Icon"> Vaggelis Chaniotakis</a></p>
-        </div>
+    </nav>
+
+    <!-- Profile Photo -->
+    <div class="profile-photo-container">
+        <img src="https://media.licdn.com/dms/image/D4D35AQGP-tUXYWJIiA/profile-framedphoto-shrink_200_200/0/1719438409684?e=1720522800&v=beta&t=PfWfMM5fWN9EbIVHSN-T6EVjckHlaxSXpNQfUsiI7AE" alt="Profile Photo" class="profile-photo">
     </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Hello, I'm Vaggelis Chaniotakis</h1>
+            <br>
+            <h2>MSc. Software Engineer</h2>
+            <br>
+            <p>Welcome to my personal website!</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Highly motivated Software Engineer with 3 years of working experience in the fields of information systems,research and development and data engineering, providing high-level support to multiple projects. Equipped with a theoretical and practical background in data management, big data analytics and mobile softwaredevelopment, I can contribute to real-world problems and give data-driven solutions.</p>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="container">
+            <h2>Resume</h2>
+            <div class="resume-item">
+                <h3>Education</h3>
+                <br>
+                <p>[Your Education Details]</p>
+                <br>
+                <h4>University of Crete, Computer Science Department (CSD)</h4>
+                <br>
+                <h5>(MSc) Master in Computer Science and Engineering</h5>
+                    <br>
+                    Grade: 9
+                    <br>
+                    <br>
+                    Master Thesis:
+                    <br>
+                    A Scalable Data Science Platform, Based on Open Source Technologies with a Predictive Analytics Application for Acute Respiratory Distress Syndrome Disease 
+                    <br>
+                    <br>
+                <h4>Technological Educational Institute of Crete, Informatics Engineering</h4>
+                <br>
+                <h5>(BSc) Bachelor’s Degree in Informatics Engineering</h5>
+                    <br>
+                    Grade: 7,5
+                    <br>
+                    <br>
+                    Thesis:
+                    <br>
+                    Development of Android Application for the management of purchases and sales 
+                    <br>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="resume-item">
+                <h3>Work Experience</h3>
+                <p>[Your Work Experience Details]</p>
+            </div>
+            <div class="resume-item">
+                <h3>Skills</h3>
+                <p>[Your Skills]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>[Description of Project 1]</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="project1_sample1.jpg" class="img-fluid" alt="Project 1 Sample 1">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="project1_sample2.jpg" class="img-fluid" alt="Project 1 Sample 2">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="project1_sample3.jpg" class="img-fluid" alt="Project 1 Sample 3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>[Description of Project 2]</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="project2_sample1.jpg" class="img-fluid" alt="Project 2 Sample 1">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="project2_sample2.jpg" class="img-fluid" alt="Project 2 Sample 2">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="project2_sample3.jpg" class="img-fluid" alt="Project 2 Sample 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:chaniotakisv@gmail.com">chaniotakisv@gmail.com</a></p>
+        </div>
+    </section>
+
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/vaggelis-chaniotakis-b0b894120/">Linked<i class="fab fa-linkedin"></i></a>
+        <p class="copyright">Vaggelis Chaniotakis ©</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
