@@ -8,6 +8,8 @@ body {
     background: #f8f9fa;
 }
 
+p {text-align: center;}
+
 .container {
     width: 80%;
     margin: auto;
@@ -66,6 +68,63 @@ nav {
     border: 5px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Profile Photo Styles */
+.cbml-photo-container {
+    background: #343a40;
+    text-align: center;
+    margin-top: 0px; /* Adjust spacing as needed */
+}
+
+.cbml-photo {
+    width: 280px;
+    height: 120px;
+    background: #f8f9fa;    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.omnixell-photo {
+    width: 90px;
+    height: 80px;
+    border-radius: 50%;
+    background: #f8f9fa;    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-row {
+    display: flex;
+}
+.image-row img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    background: transparent;
+    margin: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000; /* Change this color to your desired arrow color */
+    background-size: 50%, 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #555; /* Change this color to your desired hover color */
+    opacity: 1;
+}
+
+.carousel-control-prev {
+    margin-left: 495px; /* Adjust the negative margin to move the left arrow left */
+}
+
+.carousel-control-next {
+    margin-right: -25px; /* Adjust the negative margin to move the right arrow right */
+}
+
 
 /* Hero Section */
 .hero {
