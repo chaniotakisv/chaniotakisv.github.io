@@ -118,11 +118,11 @@ nav {
 }
 
 .carousel-control-prev {
-    margin-left: 495px; /* Adjust the negative margin to move the left arrow left */
+    margin-left: 10px; /* Adjust the negative margin to move the left arrow left */
 }
 
 .carousel-control-next {
-    margin-right: -25px; /* Adjust the negative margin to move the right arrow right */
+    margin-right: 1px; /* Adjust the negative margin to move the right arrow right */
 }
 
 
